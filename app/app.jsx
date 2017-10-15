@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import data from './data.json';
 
 class Application extends React.Component {
     constructor() {
@@ -10,8 +11,8 @@ class Application extends React.Component {
     render() {
         return (
             <div>
-                <nav class="navbar navbar-inverse bg-primary">
-                    <a href="#" class="navbar-brand">StreamingCo</a>
+                <nav className="navbar navbar-inverse bg-primary">
+                    <a href="#" className="navbar-brand">StreamingCo</a>
                 </nav>
                 <div className="container">
                     <h1>Hello world</h1>
