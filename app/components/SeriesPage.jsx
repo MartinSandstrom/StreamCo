@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 import DataService from '../dataService.js';
+import Product from './ProductComponent.jsx';
 
 export default class SeriesComponent extends React.Component {
 
@@ -18,14 +19,14 @@ export default class SeriesComponent extends React.Component {
 
     renderSeries = () => {
         let series = this.state.series.map((serie, key) => (
-            <h1 key={key}>{serie.title}</h1>
+            <Product key={key} imageUrl={serie.images['Poster Art'].url} title={serie.title}></Product>
         ));
         return series;
     }
 
     render() {
         return (
-            <div>
+            <div className="row">
                 {this.renderSeries()}
             </div>
         );

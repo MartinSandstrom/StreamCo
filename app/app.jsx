@@ -1,8 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 import {Switch, BrowserRouter, Route, Link} from 'react-router-dom'
-import MovieComponent from './components/MovieComponent.jsx';
-import SeriesComponent from './components/SeriesComponent.jsx';
+import MoviePage from './components/MoviePage.jsx';
+import SeriesPage from './components/SeriesPage.jsx';
 import OverviewComponent from './components/OverviewComponent.jsx';
 
 class Application extends React.Component {
@@ -12,7 +12,7 @@ class Application extends React.Component {
             parsedData: {}
         }
     }
-    
+
     render() {
         return (
             <div>
@@ -22,8 +22,8 @@ class Application extends React.Component {
                 <div className="container">
                     <BrowserRouter>
                         <Switch>
-                            <Route path="/movies" component={MovieComponent}/>
-                            <Route path="/series" component={SeriesComponent}/>
+                            <Route path="/movies" component={MoviePage}/>
+                            <Route path="/series" component={SeriesPage}/>
                             <Route path="/" component={OverviewComponent}/>
                         </Switch>
                     </BrowserRouter>
