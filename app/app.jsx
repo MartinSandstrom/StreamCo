@@ -17,7 +17,7 @@ class Application extends React.Component {
         return (
             <div>
                 <nav className="navbar navbar-inverse bg-primary">
-                    <a href="/" className="navbar-brand">StreamingCo</a>
+                    <a href="/" className="navbar-brand">STREAMING CO</a>
                 </nav>
                 <div className="container">
                     <BrowserRouter>
