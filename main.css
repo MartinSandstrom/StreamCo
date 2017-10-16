@@ -1,15 +1,31 @@
-.app-container {    
-    display: flex ;
+.app-container {
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
-.btn {
+.btn-default {
     cursor: pointer;
+    border-radius: 0;
+    color: white;
+    background-color: #343a40;
 }
 
 .content {
     flex: 1;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.footer {
+    width: 100%;
+    padding: 36px 15px;
+    clear: both;
+    line-height: 30px;
+    background-color: #343a40;
+    color: white;
 }
 
 .genre-card {
@@ -30,12 +46,7 @@
     color: white;
 }
 
-.footer {
-    width: 100%;
-    padding: 36px 15px;
-    clear: both;
-    line-height: 30px;
-    background-color: #343a40;
+.navbar-dark .navbar-nav .nav-link {
     color: white;
 }
 
@@ -46,9 +57,10 @@
 }
 
 .store-logo {
-    margi width: 100px;
+    width: 100px;
     height: 28px;
     float: right;
+    margin-left: 5px;
 }
 
 .vertical-list {
@@ -67,5 +79,8 @@
     }
     .vertical-list {
         display: block;
+    }
+    .footer-list-devider {
+        display: none;
     }
 }
