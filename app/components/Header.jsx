@@ -19,7 +19,7 @@ export default class Header extends React.Component {
                                 <a className="nav-link" href="#">Log in</a>
                             </li>
                             <li className="nav-item">
-                                <button className="btn btn-default">Start trial</button>
+                                <button className="btn btn-default">Start your free trial</button>
                             </li>
                         </ul>
                     </div>

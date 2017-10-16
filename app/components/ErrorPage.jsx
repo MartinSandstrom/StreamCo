@@ -1,18 +1,20 @@
 import React from 'react';
 import {render} from 'react-dom';
+import SubNavBar from './SubNavBar.jsx';
 
 export default class MoviePage extends React.Component {
 
     constructor() {
         super();
-        this.state = {
-        }
+        this.state = {}
     }
     render() {
         return (
             <div>
-
-                Oops something went wrong...
+                <SubNavBar title="Popular titles"></SubNavBar>
+                <div className="container">
+                    Oops something went wrong...
+                </div>
             </div>
         );
     }

@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "webpack -d && webpack -d --watch",
+        "deploy": "npm test && webpack -p && gulp deploy",
         "test": "jest",
         "start": "node app.js"
     },
@@ -20,6 +21,7 @@
     "homepage": "https://github.com/MartinSandstrom/StreamCo#readme",
     "devDependencies": {
         "express": "^4.16.2",
+        "gulp": "^3.9.1",
         "jest": "^21.2.1"
     },
     "dependencies": {

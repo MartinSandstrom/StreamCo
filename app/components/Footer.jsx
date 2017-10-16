@@ -15,19 +15,29 @@ export default class Footer extends React.Component {
                     <div>
                         <ul className="vertical-list">
                             <li>
-                                <span>Home &nbsp;|&nbsp;</span>
+                                <span>Home
+                                    <span className="footer-list-devider">&nbsp;|&nbsp;</span>
+                                </span>
                             </li>
                             <li>
-                                <span>Terms and conditions &nbsp;|&nbsp;</span>
+                                <span>Terms and conditions
+                                    <span className="footer-list-devider">&nbsp;|&nbsp;</span>
+                                </span>
                             </li>
                             <li>
-                                <span>Privacy policy &nbsp;|&nbsp;</span>
+                                <span>Privacy policy
+                                    <span className="footer-list-devider">&nbsp;|&nbsp;</span>
+                                </span>
                             </li>
                             <li>
-                                <span>Collection statement &nbsp;|&nbsp;</span>
+                                <span>Collection statement
+                                    <span className="footer-list-devider">&nbsp;|&nbsp;</span>
+                                </span>
                             </li>
                             <li>
-                                <span>Help &nbsp;|&nbsp;</span>
+                                <span>Help
+                                    <span className="footer-list-devider">&nbsp;|&nbsp;</span>
+                                </span>
                             </li>
                             <li>
                                 <span>Manage account</span>
@@ -43,9 +53,9 @@ export default class Footer extends React.Component {
                                 <img className="social-logo" src="./assets/social/instagram-white.svg" alt=""/>
                             </div>
                             <div className="col-md-5">
-                                <img className="store-logo" src="./assets/store/app-store.svg" alt=""/>
-                                <img className="store-logo" src="./assets/store/play-store.svg" alt=""/>
                                 <img className="store-logo" src="./assets/store/windows-store.svg" alt=""/>
+                                <img className="store-logo" src="./assets/store/play-store.svg" alt=""/>
+                                <img className="store-logo" src="./assets/store/app-store.svg" alt=""/>
                             </div>
                         </div>
 
