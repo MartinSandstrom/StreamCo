@@ -12,7 +12,7 @@ export default class MovieComponent extends React.Component {
     }
 
     componentDidMount = () => {
-        let movies = DataService.getData('movie');
+        let movies = DataService.getData('movie', 21, 2010);
         this.setState({movies});
     }
 

@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node app.js",
-        "dev": "webpack -d && webpack -d --watch"
+        "dev": "webpack -d && webpack -d --watch",
+        "test": "jest",
+        "start": "node app.js"
     },
     "repository": {
         "type": "git",
@@ -19,7 +19,8 @@
     },
     "homepage": "https://github.com/MartinSandstrom/StreamCo#readme",
     "devDependencies": {
-        "express": "^4.16.2"
+        "express": "^4.16.2",
+        "jest": "^21.2.1"
     },
     "dependencies": {
         "babel-core": "^6.26.0",

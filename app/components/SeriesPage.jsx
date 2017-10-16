@@ -13,7 +13,7 @@ export default class SeriesComponent extends React.Component {
     }
 
     componentDidMount = () => {
-        let series = DataService.getData('series');
+        let series = DataService.getData('series', 21, 2010);
         this.setState({series});
     }
 
