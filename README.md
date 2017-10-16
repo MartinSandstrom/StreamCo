@@ -72,3 +72,15 @@ Style the application with SASS is always the prefered way as the application gr
 ```console
     npm run dev
 ```
+
+### Run tests
+
+```console
+    npm test
+```
+
+### Deploy to be tested on mobile device (for those with permission =D)
+
+```console
+    npm run deploy
+```

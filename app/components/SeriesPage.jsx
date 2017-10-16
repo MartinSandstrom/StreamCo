@@ -7,7 +7,7 @@ import SubNavBar from './SubNavBar.jsx';
 export default class SeriesPage extends React.Component {
 
     constructor() {
-        super()
+        super();
         this.state = {
             series: [],
             isLoading: false

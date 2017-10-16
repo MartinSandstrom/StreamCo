@@ -4,8 +4,7 @@ import {render} from 'react-dom';
 export default class SubNavbar extends React.Component {
 
     constructor() {
-        super()
-        this.state = {}
+        super();
     }
 
     render() {

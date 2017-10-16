@@ -5,8 +5,7 @@ import SubNavBar from './SubNavBar.jsx';
 
 export default class OverviewPage extends React.Component {
     constructor() {
-        super()
-        this.state = {}
+        super();
     }
     render() {
         return (

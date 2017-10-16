@@ -4,7 +4,7 @@ import {render} from 'react-dom';
 export default class Product extends React.Component {
 
     constructor(props) {
-        super(props)
+        super(props);
     }
 
     render() {

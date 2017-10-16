@@ -6,7 +6,6 @@ export default class MoviePage extends React.Component {
 
     constructor() {
         super();
-        this.state = {}
     }
     render() {
         return (
