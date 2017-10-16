@@ -2,6 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import DataService from '../dataService.js';
 import Product from './Product.jsx';
+import SubNavBar from './SubNavBar.jsx';
 
 export default class MoviePage extends React.Component {
 
@@ -27,8 +28,13 @@ export default class MoviePage extends React.Component {
 
     render() {
         return (
-            <div className="row">
-                {this.renderMovies()}
+            <div>
+                <SubNavBar title="Popular movies"></SubNavBar>
+                <div className="container">
+                    <div className="row ">
+                        {this.renderMovies()}
+                    </div>
+                </div>
             </div>
         );
     }

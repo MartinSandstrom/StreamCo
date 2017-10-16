@@ -7,14 +7,12 @@ import Content from './components/Content.jsx';
 class Application extends React.Component {
     constructor() {
         super()
-        this.state = {
-            parsedData: {}
-        }
+        this.state = {}
     }
 
     render() {
         return (
-            <div className="wrapper">
+            <div>
                 <Header></Header>
                 <Content></Content>
                 <Footer></Footer>

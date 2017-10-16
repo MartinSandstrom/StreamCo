@@ -4,6 +4,7 @@ import {Switch, BrowserRouter, Route, Link} from 'react-router-dom'
 import MoviePage from './MoviePage.jsx';
 import SeriesPage from './SeriesPage.jsx';
 import OverviewPage from './OverviewPage.jsx';
+import ErrorPage from './ErrorPage.jsx';
 
 export default class Content extends React.Component {
 
@@ -14,12 +15,12 @@ export default class Content extends React.Component {
 
     render() {
         return (
-
-            <div className="container">
+            <div>
                 <BrowserRouter>
                     <Switch>
                         <Route path="/movies" component={MoviePage}/>
                         <Route path="/series" component={SeriesPage}/>
+                        <Route path="/error" component={ErrorPage}/>
                         <Route path="/" component={OverviewPage}/>
                     </Switch>
                 </BrowserRouter>

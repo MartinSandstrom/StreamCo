@@ -2,6 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import DataService from '../dataService.js';
 import Product from './Product.jsx';
+import SubNavBar from './SubNavBar.jsx';
 
 export default class SeriesPage extends React.Component {
 
@@ -26,8 +27,13 @@ export default class SeriesPage extends React.Component {
 
     render() {
         return (
-            <div className="row">
-                {this.renderSeries()}
+            <div>
+                <SubNavBar title="Popular series"></SubNavBar>
+                <div className="container">
+                    <div className="row ">
+                        {this.renderSeries()}
+                    </div>
+                </div>
             </div>
         );
     }

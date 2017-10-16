@@ -24,14 +24,6 @@ export default class Header extends React.Component {
                         </ul>
                     </div>
                 </nav>
-                <nav className="navbar navbar-dark bg-dark mb-3">
-
-                    <div className="container">
-                        <span className="navbar-brand">
-                            Popular titles
-                        </span>
-                    </div>
-                </nav>
             </div>
         );
     }
