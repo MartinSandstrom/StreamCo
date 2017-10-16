@@ -15,7 +15,7 @@ export default class Content extends React.Component {
 
     render() {
         return (
-            <div>
+            <section className="content">
                 <BrowserRouter>
                     <Switch>
                         <Route path="/movies" component={MoviePage}/>
@@ -24,7 +24,7 @@ export default class Content extends React.Component {
                         <Route path="/" component={OverviewPage}/>
                     </Switch>
                 </BrowserRouter>
-            </div>
+            </section>
         );
     }
 }

@@ -10,7 +10,7 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <div>
+            <header>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
                     <div className="container">
                         <a className="navbar-brand" href="/">DEMO streaming</a>
@@ -24,7 +24,7 @@ export default class Header extends React.Component {
                         </ul>
                     </div>
                 </nav>
-            </div>
+            </header>
         );
     }
 }

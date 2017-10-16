@@ -12,7 +12,7 @@ class Application extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="app-container">
                 <Header></Header>
                 <Content></Content>
                 <Footer></Footer>

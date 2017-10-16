@@ -1,5 +1,15 @@
+.app-container {    
+    display: flex ;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 .btn {
     cursor: pointer;
+}
+
+.content {
+    flex: 1;
 }
 
 .genre-card {
@@ -21,8 +31,6 @@
 }
 
 .footer {
-    position: relative;
-    bottom: 0;
     width: 100%;
     padding: 36px 15px;
     clear: both;
