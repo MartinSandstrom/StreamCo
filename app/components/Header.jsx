@@ -17,11 +17,11 @@ export default class Header extends React.Component {
             <header>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary ">
                     <div className="container">
-                        <button className="navbar-toggler navbar-toggler-right" type="button" onClick={this.toggleNavBar} data-toggle="collapse" target="#navbarCollapsed">
+                        <button className="navbar-toggler navbar-toggler-right" type="button" onClick={this.toggleNavBar}>
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <a className="navbar-brand" href="/">DEMO streaming</a>
-                        <div className={"navbar-collapse " + (this.state.navbarIsOpen ? '' : 'collapse')} id="navbarCollapsed">
+                        <div className={"navbar-collapse " + (this.state.navbarIsOpen ? '' : 'collapse')}>
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Log in</a>
