@@ -1,7 +1,14 @@
 
 # StreamCo
 
-### Wow decided to go with flexbox and bootstrap 4, and once you go flexbox....
+## Why?
+
+### How did you decide which technologies to use as part of your solution?
+
+### Are there any improvements you could make to your submission?
+
+### What would you do differently if you were allocated more time?
+
 
 ## Usage
 
