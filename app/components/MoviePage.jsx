@@ -20,7 +20,6 @@ export default class MoviePage extends React.Component {
     }
 
     renderMovies = () => {
-        console.log(this.state.movies);
         let movies = this.state.movies.map((movie, key) => (
             <Product key={key} imageUrl={movie.images['Poster Art'].url} title={movie.title}></Product>
         ));

@@ -14,7 +14,7 @@ export default class OverviewPage extends React.Component {
                 <SubNavBar title="Popular titles"></SubNavBar>
                 <div className="container">
                     <div className="row">
-                        <div className="m-2">
+                        <div className="m-2 genre-wrapper">
                             <Link to="/movies" className="genre-card-link">
                                 <div className="card genre-card">
                                     <img src="assets/placeholder.png" alt="image url"/>
@@ -23,7 +23,7 @@ export default class OverviewPage extends React.Component {
                             </Link>
                             Popular movies
                         </div>
-                        <div className="m-2">
+                        <div className="m-2 genre-wrapper">
                             <Link to="/series" className="genre-card-link">
                                 <div className="card genre-card">
                                     <img src="assets/placeholder.png" alt="image url"/>
