@@ -19,6 +19,13 @@
     margin-right: 15px;
 }
 
+.store-logo {
+    margi
+    width: 100px;
+    height: 28px;
+    float: right;
+}
+
 .vertical-list {
     display: flex;
     align-items: center;
@@ -27,3 +34,13 @@
     padding-left: 0;
     margin-bottom: 0;
 }
+
+@media (max-width: 992px) {
+    .store-logo {
+        margin-top: 15px;
+        float: none;
+    }
+    .vertical-list {
+        display: block;
+    }
+ }
