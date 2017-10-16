@@ -1,3 +1,29 @@
-.navbar {
-    margin-bottom: 15px;
+.btn {
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 36px 15px;
+    clear: both;
+    line-height: 30px;
+    background-color: #343a40;
+    color: white;
+}
+
+.social-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.vertical-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    padding-left: 0;
+    margin-bottom: 0;
 }

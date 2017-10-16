@@ -1,9 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {Switch, BrowserRouter, Route, Link} from 'react-router-dom'
-import MoviePage from './components/MoviePage.jsx';
-import SeriesPage from './components/SeriesPage.jsx';
-import OverviewComponent from './components/OverviewComponent.jsx';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Content from './components/Content.jsx';
 
 class Application extends React.Component {
     constructor() {
@@ -15,19 +14,10 @@ class Application extends React.Component {
 
     render() {
         return (
-            <div>
-                <nav className="navbar navbar-inverse bg-primary">
-                    <a href="/" className="navbar-brand">STREAMING CO</a>
-                </nav>
-                <div className="container">
-                    <BrowserRouter>
-                        <Switch>
-                            <Route path="/movies" component={MoviePage}/>
-                            <Route path="/series" component={SeriesPage}/>
-                            <Route path="/" component={OverviewComponent}/>
-                        </Switch>
-                    </BrowserRouter>
-                </div>
+            <div className="wrapper">
+                <Header></Header>
+                <Content></Content>
+                <Footer></Footer>
             </div>
         );
     }

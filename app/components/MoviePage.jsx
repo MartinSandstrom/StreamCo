@@ -1,9 +1,10 @@
 import React from 'react';
 import {render} from 'react-dom';
 import DataService from '../dataService.js';
-import Product from './ProductComponent.jsx';
+import Product from './Product.jsx';
 
-export default class MovieComponent extends React.Component {
+export default class MoviePage extends React.Component {
+
     constructor() {
         super();
         this.state = {

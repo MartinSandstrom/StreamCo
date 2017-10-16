@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
-export default class ProductComponent extends React.Component {
+
+export default class Product extends React.Component {
 
     constructor(props) {
         super(props)

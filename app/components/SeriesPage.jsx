@@ -1,9 +1,9 @@
 import React from 'react';
 import {render} from 'react-dom';
 import DataService from '../dataService.js';
-import Product from './ProductComponent.jsx';
+import Product from './Product.jsx';
 
-export default class SeriesComponent extends React.Component {
+export default class SeriesPage extends React.Component {
 
     constructor() {
         super()
