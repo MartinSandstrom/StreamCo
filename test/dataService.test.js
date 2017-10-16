@@ -29,6 +29,8 @@ describe('dataService', () => {
         let movies = dataService.getData('movie', 21, 2009);
         expect(movies.length > 0 && movies.every((movie) =>  movie.releaseYear >= 2009)).toBe(true);
     });
-    //TODO
-    //Add test to see if its sorted correctly maybe?
+    test('sort correctly', () => {
+        let movies = dataService.getData('movie', 1, 2009);
+        expect(movies[0].title).toEqual('A Lego Brickumentary');
+    });
 });
