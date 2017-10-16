@@ -33,4 +33,8 @@ describe('dataService', () => {
         let movies = dataService.getData('movie', 1, 2009);
         expect(movies[0].title).toEqual('A Lego Brickumentary');
     });
+    test('make sure Geordie Shore is on of the popular series in the app :D', () => {
+        let series = dataService.getData('series', 21, 2010);
+        expect(series[15].title).toEqual('Geordie Shore');
+    });
 });
