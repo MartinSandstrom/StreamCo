@@ -13,20 +13,24 @@ export default class OverviewPage extends React.Component {
             <div>
                 <SubNavBar title="Popular titles"></SubNavBar>
                 <div className="container">
-                    <div className="col-sm-4 col-lg-2 d-flex align-items-stretch mb-3">
-                        <div className="card">
-                            <img className="img-fluid" src={this.props.imageUrl} alt={'image url'}/>
-                            <div className="card-body">
-                                <Link to="/movies">Movies</Link>
-                            </div>
+                    <div className="row">
+                        <div className="m-2">
+                            <Link to="/movies" className="genre-card-link">
+                                <div className="card genre-card">
+                                    <img src="assets/placeholder.png" alt="image url"/>
+                                    <h2 className="genre-card-text">Movies</h2>
+                                </div>
+                            </Link>
+                            Popular movies
                         </div>
-                    </div>
-                    <div className="col-sm-4 col-lg-2 d-flex align-items-stretch mb-3">
-                        <div className="card">
-                            <img className="img-fluid" src="assets/placeholder.png" alt="image url"/>
-                            <div className="card-body">
-                                <Link to="/series">Series</Link>
-                            </div>
+                        <div className="m-2">
+                            <Link to="/series" className="genre-card-link">
+                                <div className="card genre-card">
+                                    <img src="assets/placeholder.png" alt="image url"/>
+                                    <h2 className="genre-card-text">Series</h2>
+                                </div>
+                            </Link>
+                            Popular series
                         </div>
                     </div>
                 </div>

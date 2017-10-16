@@ -9,7 +9,8 @@ export default class MoviePage extends React.Component {
     constructor() {
         super();
         this.state = {
-            movies: []
+            movies: [],
+            isLoading: false
         }
     }
 
@@ -26,12 +27,21 @@ export default class MoviePage extends React.Component {
         return movies;
     }
 
+    renderLoader = () => {
+        if (this.state.isLoading) {
+            return (
+                <p>Loading...</p>
+            );
+        }
+    }
+
     render() {
         return (
             <div>
                 <SubNavBar title="Popular movies"></SubNavBar>
                 <div className="container">
                     <div className="row ">
+                        {this.renderLoader()}
                         {this.renderMovies()}
                     </div>
                 </div>

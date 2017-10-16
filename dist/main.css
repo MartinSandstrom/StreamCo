@@ -2,6 +2,24 @@
     cursor: pointer;
 }
 
+.genre-card {
+    display: flex;
+    height: 275px;
+    background-color: #000;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genre-card-link:hover {
+    text-decoration: none;
+}
+
+.genre-card-text {
+    color: white;
+}
+
 .footer {
     position: relative;
     bottom: 0;
@@ -20,8 +38,7 @@
 }
 
 .store-logo {
-    margi
-    width: 100px;
+    margi width: 100px;
     height: 28px;
     float: right;
 }
@@ -43,4 +60,4 @@
     .vertical-list {
         display: block;
     }
- }
+}

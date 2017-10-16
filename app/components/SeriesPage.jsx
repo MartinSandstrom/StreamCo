@@ -9,13 +9,15 @@ export default class SeriesPage extends React.Component {
     constructor() {
         super()
         this.state = {
-            series: []
+            series: [],
+            isLoading: false
         }
     }
 
     componentDidMount = () => {
+        this.setState({isLoading: true})
         let series = DataService.getData('series', 21, 2010);
-        this.setState({series});
+        this.setState({series, isLoading: false});
     }
 
     renderSeries = () => {
@@ -25,12 +27,21 @@ export default class SeriesPage extends React.Component {
         return series;
     }
 
+    renderLoader = () => {
+        if (this.state.isLoading) {
+            return (
+                <p>Loading...</p>
+            );
+        }
+    }
+
     render() {
         return (
             <div>
                 <SubNavBar title="Popular series"></SubNavBar>
                 <div className="container">
                     <div className="row ">
+                        {this.renderLoader()}
                         {this.renderSeries()}
                     </div>
                 </div>
