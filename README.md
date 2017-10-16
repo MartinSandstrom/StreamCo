@@ -25,7 +25,36 @@ without any additional packages. Jest is also super fast, no one like to spend a
 
 ### Are there any improvements you could make to your submission?
 
+#### Testing
+
+There is always more test to be written, I would not consider a component on a webpage finished without a selenium
+like test running the expected scenarios.
+
+
+#### Two endpoints
+
+If the solution would change to ask an api for data, the REST way would be to have two separate resources
+for movies and series. That would scale better as we go against looking at a specific movie or series.
+
+
+#### Reactstrap
+
+Use a library like Reactstrap to build the bootstrap parts with their components instead would give the solution
+a more modularized architecture.
+
+#### SASS
+
+Style the application with SASS is always prefered as the application grow larger.
+
+
+
 ### What would you do differently if you were allocated more time?
+
+* Add filters to the movie and series pages.
+
+* Be part of building some "people who like this movie also liked"-functionality would be really cool :D
+
+*
 
 
 ## Usage
